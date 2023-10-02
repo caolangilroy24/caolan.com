@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { BlogPage } from './pages/BlogPage'
 import { BlogPostPage } from './pages/BlogPostPage'
 import { HomePage } from './pages/HomePage'
-import { TikTakToePage } from './pages/TikTakToePage'
+import { TicTacToePage } from './pages/TicTacToePage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { ToDoListPage } from './pages/ToDoListPage'
 
@@ -19,7 +19,7 @@ export const PageRoutes = () => {
                 <Route path="/home" element={<HomePage/>}/>
                 <Route path="/blog/:blogId" element={<BlogPostPage/>}/>
                 <Route path="/blog" element={<BlogPage/>}/>
-                <Route path="/tiktak" element={<TikTakToePage/>}/>
+                <Route path="/tictac" element={<TicTacToePage/>}/>
                 <Route path="/todolist" element={<ToDoListPage/>}/>
                 <Route element={<NotFoundPage/>}/>
             </Routes>

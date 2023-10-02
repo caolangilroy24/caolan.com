@@ -1,12 +1,17 @@
 import React from 'react';
 import { PageRoutes } from './PageRoutes';
+// import Navbar from './components/Navbar';
 // import { useState } from 'react';
-// import  './index.css'
+import  './styles.css'
+import Navbar from './components/Navbar';
 
 // const LOCAL_STORAGE_KEY = 'todoApp.todos'
 function App() {
   return(
+    <>
+    <Navbar/>
     <PageRoutes/>
+    </>
   )
 }
 // function App() {
