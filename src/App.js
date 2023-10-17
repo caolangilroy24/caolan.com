@@ -10,7 +10,10 @@ function App() {
   return(
     <>
     <Navbar/>
-    <PageRoutes/>
+    <div className='main-container'>
+      <PageRoutes/>
+    </div>
+    
     </>
   )
 }

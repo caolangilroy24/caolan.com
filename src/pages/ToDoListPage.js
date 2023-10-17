@@ -45,9 +45,11 @@ export const ToDoListPage = () => {
         return (
         <>
         <div>{(todos.filter(todo => !todo.complete)).length} left to do</div>
-        <input ref = {todoNameRef} type="text" />
-        <button onClick={handleAddTodo}>Add To do</button>
-        <button onClick={handleClearTodos}>Clear Completed</button>
+        <div className='tdl-contain'>
+            <input ref = {todoNameRef} type="text" />
+            <button className='button-1'onClick={handleAddTodo}>Add To do</button>
+            <button onClick={handleClearTodos}>Clear Completed</button>
+        </div>
         <TodoList todos={todos} toggleTodo={toggleTodo}/>
         </>
         )
