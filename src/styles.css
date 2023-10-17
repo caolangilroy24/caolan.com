@@ -5,7 +5,7 @@
       #ff6542, ffc15e, 3c0919, #7D1128
   */
   body {
-    background-color: black;
+    background-color: #212427;
     /* background-color: #041f1e; */
     color: white;
     font-family: sans-serif;
@@ -14,7 +14,7 @@
   }
 
 .main-container {
-  margin: 1rem;
+  /* margin: 1rem; */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
     font-size: 2rem;
   }
   .nav {
-    background-color: #3c0919;
+    background-color: #F0A955;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -178,4 +178,29 @@
     box-sizing: border-box;
     color: #000000;
   }
+  
+
+  .box {
+    padding: 5% 2.5%;
+    background: white;
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .homepage-container{
+    background-size:cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homepage-text{
+    color: white;
+  }
+
   

@@ -16,7 +16,7 @@ export const PageRoutes = () => {
     return (
         <Router> 
             <Routes>
-                <Route path="/home" element={<HomePage/>}/>
+                <Route path="/" element={<HomePage/>}/>
                 <Route path="/blog/:blogId" element={<BlogPostPage/>}/>
                 <Route path="/blog" element={<BlogPage/>}/>
                 <Route path="/tictac" element={<TicTacToePage/>}/>

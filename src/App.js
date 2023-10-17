@@ -4,6 +4,7 @@ import { PageRoutes } from './PageRoutes';
 // import { useState } from 'react';
 import  './styles.css'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 // const LOCAL_STORAGE_KEY = 'todoApp.todos'
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className='main-container'>
       <PageRoutes/>
     </div>
+    {/* <Footer/> */}
     
     </>
   )
