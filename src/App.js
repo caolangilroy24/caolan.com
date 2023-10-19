@@ -1,11 +1,15 @@
 import React from 'react';
 import { PageRoutes } from './PageRoutes';
-// import Navbar from './components/Navbar';
-// import { useState } from 'react';
 import  './styles.css'
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
+// import {FaPhone} from 'react-icons/fa'
+// import { click } from '@testing-library/user-event/dist/click';
+import Modal from './components/Modal';
 
+function clicked() {
+  console.log('clicked')
+}
 // const LOCAL_STORAGE_KEY = 'todoApp.todos'
 function App() {
   return(
@@ -13,8 +17,13 @@ function App() {
     <Navbar/>
     <div className='main-container'>
       <PageRoutes/>
+      <Modal/>
     </div>
     {/* <Footer/> */}
+    
+    {/* <div className='contact-icon' onClick={() => clicked()}>
+      <button>Contact Me <FaPhone/></button>
+    </div> */}
     
     </>
   )
