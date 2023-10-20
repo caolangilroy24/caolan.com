@@ -34,6 +34,9 @@ export default function Navbar() {
             <a href='/' className='site-title'>Caolan.com</a>
           <ul>
             <li>
+              <a href='/citysearch'>City Search</a>
+            </li>
+            <li>
               <a href='/tictac'>Tic Tac Toe</a>
             </li>
             <li>

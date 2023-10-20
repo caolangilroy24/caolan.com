@@ -5,6 +5,7 @@ import { HomePage } from './pages/HomePage'
 import { TicTacToePage } from './pages/TicTacToePage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { ToDoListPage } from './pages/ToDoListPage'
+import { SearchCityPage } from './pages/SearchCityPage'
 
 export const PageRoutes = () => {
     // first we wrap all of it inside our browser router component, this is what provides the current route inside the users 
@@ -21,6 +22,7 @@ export const PageRoutes = () => {
                 <Route path="/blog" element={<BlogPage/>}/>
                 <Route path="/tictac" element={<TicTacToePage/>}/>
                 <Route path="/todolist" element={<ToDoListPage/>}/>
+                <Route path="/citysearch" element={<SearchCityPage/>}></Route>
                 <Route element={<NotFoundPage/>}/>
             </Routes>
         </Router>
