@@ -28,9 +28,8 @@ export const SearchCityPage = () => {
     return (
         <div className="search-container">
             <SearchBar handleSearch={handleSearch}/>
-            <div className="results-container">
             <DisplaySearchResults searchResults={searchResults}/>
-            </div>
+
         </div>
     )
 }

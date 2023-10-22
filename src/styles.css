@@ -179,10 +179,16 @@
   }
 
   .results-container {
+    padding-left: 100px;
+    white-space: nowrap;
+    width: 90vw;
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     flex-direction: row;
     gap: 2rem;
+    overflow: hidden;
+    margin: 0 auto;
   }
 
   .result-tile {
@@ -191,7 +197,9 @@
     border-radius: 20px;
     height: 30vh;
     width: 15vw;
-    padding: 10px;
+    padding: 30px;
+    display: inline-block;
+    margin: 15px;
   }
 
   .button-1 {
