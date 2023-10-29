@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 
@@ -9,19 +9,19 @@ export default function Navbar() {
     <>
       <Router>
         <nav data-testid='navbar' className='nav'>
-            <NavLink data-testid='nav-home' href='/' className='site-title'>Caolan.com</NavLink>
+            <a data-testid='nav-home' href='/' className='site-title'>Caolan.com</a>
           <ul>
             <li>
-              <NavLink data-testid='nav-search' href='/citysearch'>City Search</NavLink>
+              <a data-testid='nav-search' href='/citysearch'>City Search</a>
             </li>
             <li>
-              <NavLink data-testid='nav-tik' href='/tictac'>Tic Tac Toe</NavLink>
+              <a data-testid='nav-tik' href='/tictac'>Tic Tac Toe</a>
             </li>
             <li>
-              <NavLink data-testid='nav-tdl' href='/todolist'>To Do List</NavLink>
+              <a data-testid='nav-tdl' href='/todolist'>To Do List</a>
             </li>
             <li >
-              <NavLink data-testid='nav-blog' href='/blog'>Blog</NavLink>
+              <a data-testid='nav-blog' href='/blog'>Blog</a>
             </li>
           </ul>
         </nav>
