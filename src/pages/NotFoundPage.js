@@ -2,6 +2,6 @@ import React from 'react'
 
 export const NotFoundPage = () => {
   return (
-    <div>Nothing here bud</div>
+    <div data-testid='not-found' >Nothing here bud</div>
   )
 }

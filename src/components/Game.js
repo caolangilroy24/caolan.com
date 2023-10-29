@@ -37,12 +37,12 @@ export default function Game() {
   return (
     <>
         {/* <h1>Tic Tac Toe</h1> */}
-        <div className='game'>
-            
-            <div className="game-board">
+        <div data-testid="game" className='game'>
+            Hi
+            <div data-testid="board"  className="game-board">
                 <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
             </div>
-            <div className='game-info'>
+            <div data-testid="info" className='game-info'>
                 {/* <ol>Todo</ol> */}
                 {moves}
             </div>

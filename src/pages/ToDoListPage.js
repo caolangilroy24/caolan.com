@@ -31,10 +31,10 @@ export const ToDoListPage = () => {
         }
     
         function toggleTodo(id){ // we arent able to use this function cause todo's are in tdl, in app, so gotta pass f down
-        const newTodos = [...todos] // in react should never directly modify a state var, instead copy, modify copy, set state var = copy
-        const todo = newTodos.find(todo => todo.id === id)
-        todo.complete = !todo.complete
-        setTodos(newTodos)
+            const newTodos = [...todos] // in react should never directly modify a state var, instead copy, modify copy, set state var = copy
+            const todo = newTodos.find(todo => todo.id === id)
+            todo.complete = !todo.complete
+            setTodos(newTodos)
         }
         function handleClearTodos() {
         const newTodos = todos.filter(todo => !todo.complete)
@@ -45,12 +45,14 @@ export const ToDoListPage = () => {
         return (
         <>
         <div>{(todos.filter(todo => !todo.complete)).length} left to do</div>
-        <div className='input-button-contain'>
-            <input ref = {todoNameRef} type="text" />
-            <button className='button-1'onClick={handleAddTodo}>Add To do</button>
+        <div data-testid='tdl-page' className='input-button-contain'>
+            <input data-testid='tdl-in' ref = {todoNameRef} type="text" />
+            <button data-testid='tdl-add' className='button-1'onClick={handleAddTodo}>Add To do</button>
             <button onClick={handleClearTodos}>Clear Completed</button>
         </div>
-        <TodoList todos={todos} toggleTodo={toggleTodo}/>
+        <div data-testid='tdl'>
+            <TodoList todos={todos} toggleTodo={toggleTodo}/>
+        </div>
         </>
         )
         

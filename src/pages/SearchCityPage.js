@@ -26,7 +26,7 @@ export const SearchCityPage = () => {
 
 
     return (
-        <div className="search-container">
+        <div data-testid='city-search' className="search-container">
             <SearchBar handleSearch={handleSearch}/>
             <DisplaySearchResults searchResults={searchResults}/>
 

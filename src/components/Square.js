@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Square({value, onSquareclick}) {
+export default function Square({id, value, onSquareclick}) {
     // const [value, setValue] = useState(null)
     // // let i = 1;
     // function handleClick() {
@@ -11,6 +11,6 @@ export default function Square({value, onSquareclick}) {
     //     console.log('clicked')
     // }
   return (
-    <button className='square' onClick={onSquareclick}>{value}</button>
+    <button data-testid={id} className='square' onClick={onSquareclick}>{value}</button>
   )
 }

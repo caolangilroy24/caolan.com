@@ -5,11 +5,11 @@ export default function Todo({todo, toggleTodo}) {
         toggleTodo(todo.id)
     }
     return (
-        <div>
+        // <div data-testid="todo-1">
             <label>
-                <input type="checkbox" checked={todo.complete} onChange={handleTodoClick}></input>
+                <input  type="checkbox" checked={todo.complete} onChange={handleTodoClick}></input>
                 {todo.name}
             </label>
-        </div>
+        // </div>
     )
 }
