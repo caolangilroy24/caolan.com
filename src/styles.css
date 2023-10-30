@@ -317,4 +317,17 @@
     /* font-style:oblique; */
   }
 
+
+  .new-blog-contain {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-contain {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
   

@@ -1,3 +1,4 @@
+import BlogContainer from "../components/BlogContainer"
 export const BlogPostPage = () => {
     return(
         <div data-testid='blog-post'>
